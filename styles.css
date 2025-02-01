@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: hsl(221, 100%, 96%);
+}
+
+.div-wrapper {
+  background-color: white;
+  width: 800px;
+  min-height: 30%;
+  height: auto;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+
+.leftdiv {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  width: 400px;
+  min-height: 500px;
+  height: auto;
+  border-radius: 30px;
+}
+
+.leftdiv h3 {
+  margin: 35px 0 0 0;
+  color: hsl(241, 100%, 89%);
+  font-weight: 700;
+  font-size: 1.4em;
+}
+
+.leftdiv .circle {
+  margin-top: 40px;
+  height: 180px;
+  width: 180px;
+  background: linear-gradient(
+    180deg,
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0)
+  );
+  border-radius: 50%;
+  text-align: center;
+}
+
+.circle h1 {
+  padding-top: 40px;
+  margin: 0;
+  font-weight: 900;
+  font-size: 60px;
+  color: hsl(0, 0%, 100%);
+}
+
+.circle p {
+  margin-top: 0;
+  color: hsl(241, 100%, 89%);
+  opacity: 0.7;
+}
+
+.sexyh2 {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 1.7em;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.sexyspan {
+  text-align: center;
+  margin: 0 50px 0 60px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 1em;
+  color: white;
+  opacity: 0.7;
+}
+
+.rightdiv {
+  background-color: white;
+  width: 400px;
+  min-height: 500px;
+  height: auto;
+  border-radius: 30px;
+}
+
+.summary {
+  margin-top: 35px;
+  margin-left: 30px;
+  margin-right: 40px;
+}
+
+.summary h3 {
+  font-size: 25px;
+}
+
+.boxes {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  padding-right: 10px;
+  gap: 20px;
+  /* padding: 15px; */
+  /* opacity: 0.2; */
+}
+
+.box1,
+.box2,
+.box3,
+.box4 {
+  border-radius: 10px;
+  display: flex;
+  background-color: hsl(0, 100%, 67%, 0.1);
+  padding: 14px;
+  flex-direction: row;
+  justify-content: space-between;
+  font-weight: 600;
+}
+
+.box2 {
+  background-color: hsl(39, 100%, 56%, 0.1);
+}
+
+.box3 {
+  background-color: hsl(166, 100%, 37%, 0.1);
+}
+
+.box4 {
+  background-color: hsl(234, 85%, 45%, 0.1);
+}
+
+.results-wrapper {
+  display: flex;
+  gap: 9px;
+  margin-right: 10px;
+}
+
+.left-side {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.box1 .boxtext {
+  color: hsl(0, 100%, 67%);
+}
+
+.box2 .boxtext {
+  color: hsl(39, 100%, 56%);
+}
+
+.box3 .boxtext {
+  color: hsl(166, 100%, 37%);
+}
+
+.box4 .boxtext {
+  color: hsl(234, 85%, 45%);
+}
+
+.slash,
+.rightresult {
+  opacity: 0.4;
+  font-weight: 500;
+}
+
+.final-button {
+  padding: 20px;
+  margin-top: 15px;
+  border-radius: 35px;
+  border: none;
+  background-color: hsl(224, 30%, 27%);
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  /* letter-spacing: 1px; */
+  font-family: "Hanken Grotesk", sans-serif;
+  cursor: pointer;
+}
+
+.final-button:hover {
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    min-height: auto;
+    background-color: white;
+  }
+
+  .div-wrapper {
+    flex-direction: column;
+    width: 100%;
+    border-radius: 0;
+    gap: 0;
+  }
+
+  .leftdiv {
+    width: 100%;
+    min-height: 400px;
+    border-radius: 0 0 30px 30px;
+  }
+
+  .rightdiv {
+    width: 100%;
+    min-height: auto;
+  }
+
+  .summary {
+    margin: 20px;
+  }
+
+  .boxes {
+    margin-top: 20px;
+    padding-right: 0;
+  }
+
+  .sexyspan {
+    margin: 0 30px;
+    padding: 0 10px;
+  }
+
+  .container .leftdiv .circle {
+    height: 150px;
+    width: 150px;
+  }
+
+  .circle h1 {
+    padding-top: 30px;
+    font-size: 50px;
+  }
+
+  .final-button {
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .results-wrapper {
+    margin-right: 5px;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .div-wrapper {
+    width: 90%;
+    margin: 20px;
+  }
+
+  .leftdiv,
+  .rightdiv {
+    width: 50%;
+  }
+}
